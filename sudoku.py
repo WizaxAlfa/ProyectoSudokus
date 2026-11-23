@@ -1,13 +1,16 @@
 def esCuadrada(matriz):
+
     assert isinstance(matriz, list), "la interfaz exige que sudoku debe ser una lista"
-    for check in matriz:
-        if len(check) != len(matriz):
+
+    numeroFila = len(matriz)
+
+    for fila in matriz:
+
+        if len(fila) != numeroFila:
+
             return False
-        return True
-
-
-
-
+        
+    return True
 
 
 if __name__ == '__main__':
