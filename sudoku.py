@@ -12,6 +12,16 @@ def esCuadrada(matriz):
         
     return True
 
+def sonNumerosEnteros (matriz):
+
+    for fila in matriz:
+
+        for numero in fila:
+
+            if not isinstance(numero, int):
+                return False
+    return True
+        
 
 if __name__ == '__main__':
     # Test Cases:
