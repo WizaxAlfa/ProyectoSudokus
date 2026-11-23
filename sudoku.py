@@ -21,6 +21,19 @@ def sonNumerosEnteros (matriz):
             if not isinstance(numero, int):
                 return False
     return True
+
+def numerosEnRango(matriz):
+
+    numerosValidos = range(1, len(matriz) + 1)
+
+    for fila in matriz:
+
+        for numero in fila:
+
+            if numero not in numerosValidos:
+                return False
+
+    return True
         
 
 if __name__ == '__main__':
