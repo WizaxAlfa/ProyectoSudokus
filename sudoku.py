@@ -34,6 +34,12 @@ def numerosEnRango(matriz):
                 return False
 
     return True
+
+def checkNumerosValidos(matriz):
+
+    assert sonNumerosEnteros == True
+    assert numerosEnRango == True
+    return sonNumerosEnteros(matriz) and numerosEnRango(matriz)
         
 
 if __name__ == '__main__':
