@@ -1,4 +1,4 @@
-from 
+from src.esCuadrada import esCuadrada
 
 def sonNumerosEnteros (matriz):
 
