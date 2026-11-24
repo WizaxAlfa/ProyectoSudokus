@@ -50,7 +50,8 @@ def checkFilas(sudoku):
     return True
         
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    # Test Cases:
 
     assert checkFilas(([1,2,3],
                        [2,3,1],
