@@ -76,3 +76,7 @@ if __name__ == '__main__':
     assert esCuadrada ([['a', 'b', 'c'],
                         ['b', 'c', 'a'],
                         ['c', 'a', 'b']]) is True
+
+    assert checkFilas(([1,2,3],
+                       [2,3,1],
+                       [3,1,2])) is True
