@@ -42,6 +42,24 @@ def checkNumerosValidos(sudoku):
     except TypeError:
         print("el input debe ser una lista")
     return sonNumerosEnteros(sudoku) and numerosEnRango(sudoku)
+
+
+def checkFilas(sudoku):
+
+    for fila in sudoku:
+
+        posicionNumero = 0
+
+        for numero in fila:
+
+            if numero in fila[posicionNumero + 1:]:
+                return False
+            
+            else:
+
+                posicionNumero += 1
+
+    return True
         
 
 if __name__ == '__main__':
