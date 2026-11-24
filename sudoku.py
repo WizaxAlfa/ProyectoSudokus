@@ -37,15 +37,17 @@ def numerosEnRango(matriz):
 
 def checkNumerosValidos(sudoku):
 
-    assert sonNumerosEnteros == True
-    assert numerosEnRango == True
+    try:
+        isinstance(sudoku, list)
+    except TypeError:
+        print("el input debe ser una lista")
     return sonNumerosEnteros(sudoku) and numerosEnRango(sudoku)
         
 
 if __name__ == '__main__':
     # Test Cases:
     assert esCuadrada ([[1, 2, 3],
-                        [2, 3, 1, 4],
+                        [2, 3, 1],
                         [3, 1, 2]]) is True
     
     assert esCuadrada ([[1, 2, 3],
