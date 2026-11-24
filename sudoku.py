@@ -35,11 +35,11 @@ def numerosEnRango(matriz):
 
     return True
 
-def checkNumerosValidos(matriz):
+def checkNumerosValidos(sudoku):
 
     assert sonNumerosEnteros == True
     assert numerosEnRango == True
-    return sonNumerosEnteros(matriz) and numerosEnRango(matriz)
+    return sonNumerosEnteros(sudoku) and numerosEnRango(sudoku)
         
 
 if __name__ == '__main__':
