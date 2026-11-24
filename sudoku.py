@@ -1,5 +1,3 @@
-from src.esCuadrada import esCuadrada
-
 def sonNumerosEnteros (matriz):
 
     for fila in matriz:
